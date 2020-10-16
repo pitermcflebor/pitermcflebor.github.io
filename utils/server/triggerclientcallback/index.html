@@ -8,19 +8,19 @@
       
       
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
     
     
       
-        <title>Lua Classes for FiveM</title>
+        <title>TriggerClientCallback - Lua Classes for FiveM</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
         
           
           
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-classes-documentation" class="md-skip">
+        <a href="#triggerclientcallback" class="md-skip">
           Skip to content
         </a>
       
@@ -73,7 +73,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="." title="Lua Classes for FiveM" class="md-header-nav__button md-logo" aria-label="Lua Classes for FiveM">
+    <a href="../../.." title="Lua Classes for FiveM" class="md-header-nav__button md-logo" aria-label="Lua Classes for FiveM">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              TriggerClientCallback
             
           </span>
         </div>
@@ -145,7 +145,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Lua Classes for FiveM" class="md-nav__button md-logo" aria-label="Lua Classes for FiveM">
+    <a href="../../.." title="Lua Classes for FiveM" class="md-nav__button md-logo" aria-label="Lua Classes for FiveM">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -160,97 +160,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="." class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../.." class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#github-code" class="md-nav__link">
-    Github Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fivem-post" class="md-nav__link">
-    FiveM post
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#patch-notes" class="md-nav__link">
-    Patch Notes
-  </a>
-  
-    <nav class="md-nav" aria-label="Patch Notes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v010-big-changes" class="md-nav__link">
-    v0.1.0 BIG CHANGES
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v011" class="md-nav__link">
-    v0.1.1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v012" class="md-nav__link">
-    v0.1.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v013" class="md-nav__link">
-    v0.1.3
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -258,10 +172,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Classes
@@ -279,10 +195,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       Utils
@@ -323,7 +241,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/split/" class="md-nav__link">
+    <a href="../../common/split/" class="md-nav__link">
       string:split
     </a>
   </li>
@@ -335,7 +253,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/startsWith/" class="md-nav__link">
+    <a href="../../common/startsWith/" class="md-nav__link">
       string:startsWith
     </a>
   </li>
@@ -347,7 +265,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/endsWith/" class="md-nav__link">
+    <a href="../../common/endsWith/" class="md-nav__link">
       string:endsWith
     </a>
   </li>
@@ -359,7 +277,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/trim/" class="md-nav__link">
+    <a href="../../common/trim/" class="md-nav__link">
       string:trim
     </a>
   </li>
@@ -371,7 +289,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/tablebuild/" class="md-nav__link">
+    <a href="../../common/tablebuild/" class="md-nav__link">
       table.build
     </a>
   </li>
@@ -383,7 +301,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/tablefill/" class="md-nav__link">
+    <a href="../../common/tablefill/" class="md-nav__link">
       table.fill
     </a>
   </li>
@@ -395,7 +313,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/tabledump/" class="md-nav__link">
+    <a href="../../common/tabledump/" class="md-nav__link">
       table.dump
     </a>
   </li>
@@ -407,7 +325,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/type/" class="md-nav__link">
+    <a href="../../common/type/" class="md-nav__link">
       _type
     </a>
   </li>
@@ -419,7 +337,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/common/warning/" class="md-nav__link">
+    <a href="../../common/warning/" class="md-nav__link">
       warning
     </a>
   </li>
@@ -457,7 +375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/client/triggerservercallback/" class="md-nav__link">
+    <a href="../../client/triggerservercallback/" class="md-nav__link">
       TriggerServerCallback
     </a>
   </li>
@@ -469,7 +387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/client/registerclientcallback/" class="md-nav__link">
+    <a href="../../client/registerclientcallback/" class="md-nav__link">
       RegisterClientCallback
     </a>
   </li>
@@ -481,7 +399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/client/showhelpnotification/" class="md-nav__link">
+    <a href="../../client/showhelpnotification/" class="md-nav__link">
       ShowHelpNotification
     </a>
   </li>
@@ -493,7 +411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/client/shownotification/" class="md-nav__link">
+    <a href="../../client/shownotification/" class="md-nav__link">
       ShowNotification
     </a>
   </li>
@@ -505,7 +423,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/client/timeoutrequestmodel/" class="md-nav__link">
+    <a href="../../client/timeoutrequestmodel/" class="md-nav__link">
       TimeoutRequestModel
     </a>
   </li>
@@ -520,10 +438,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3" checked>
     
     <label class="md-nav__link" for="nav-2-1-3">
       Server
@@ -541,11 +461,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="utils/server/triggerclientcallback/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        TriggerClientCallback
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       TriggerClientCallback
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raise" class="md-nav__link">
+    Raise
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -555,7 +534,7 @@
 
 
   <li class="md-nav__item">
-    <a href="utils/server/registerservercallback/" class="md-nav__link">
+    <a href="../registerservercallback/" class="md-nav__link">
       RegisterServerCallback
     </a>
   </li>
@@ -619,7 +598,7 @@
 
 
   <li class="md-nav__item">
-    <a href="coords/client/init/" class="md-nav__link">
+    <a href="../../../coords/client/init/" class="md-nav__link">
       Init
     </a>
   </li>
@@ -631,7 +610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="coords/client/addblip/" class="md-nav__link">
+    <a href="../../../coords/client/addblip/" class="md-nav__link">
       AddBlip
     </a>
   </li>
@@ -643,7 +622,7 @@
 
 
   <li class="md-nav__item">
-    <a href="coords/client/updatex/" class="md-nav__link">
+    <a href="../../../coords/client/updatex/" class="md-nav__link">
       UpdateX
     </a>
   </li>
@@ -655,7 +634,7 @@
 
 
   <li class="md-nav__item">
-    <a href="coords/client/updatey/" class="md-nav__link">
+    <a href="../../../coords/client/updatey/" class="md-nav__link">
       UpdateY
     </a>
   </li>
@@ -667,7 +646,7 @@
 
 
   <li class="md-nav__item">
-    <a href="coords/client/updatez/" class="md-nav__link">
+    <a href="../../../coords/client/updatez/" class="md-nav__link">
       UpdateZ
     </a>
   </li>
@@ -679,7 +658,7 @@
 
 
   <li class="md-nav__item">
-    <a href="coords/client/updatew/" class="md-nav__link">
+    <a href="../../../coords/client/updatew/" class="md-nav__link">
       UpdateW
     </a>
   </li>
@@ -706,7 +685,7 @@
 
 
   <li class="md-nav__item">
-    <a href="credits/" class="md-nav__link">
+    <a href="../../../credits/" class="md-nav__link">
       Credits
     </a>
   </li>
@@ -736,57 +715,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#github-code" class="md-nav__link">
-    Github Code
+  <a href="#parameters" class="md-nav__link">
+    Parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fivem-post" class="md-nav__link">
-    FiveM post
+  <a href="#returns" class="md-nav__link">
+    Returns
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#patch-notes" class="md-nav__link">
-    Patch Notes
-  </a>
-  
-    <nav class="md-nav" aria-label="Patch Notes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v010-big-changes" class="md-nav__link">
-    v0.1.0 BIG CHANGES
+  <a href="#raise" class="md-nav__link">
+    Raise
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#v011" class="md-nav__link">
-    v0.1.1
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v012" class="md-nav__link">
-    v0.1.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v013" class="md-nav__link">
-    v0.1.3
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -803,38 +755,26 @@
               
                 
                 
-                <h1 id="welcome-to-classes-documentation">Welcome to <code>Classes</code> documentation!<a class="headerlink" href="#welcome-to-classes-documentation" title="Permanent link">&para;</a></h1>
-<h3 id="github-code"><a href="https://github.com/pitermcflebor/fivem-classes-lua">Github Code</a><a class="headerlink" href="#github-code" title="Permanent link">&para;</a></h3>
-<h3 id="fivem-post"><a href="https://forum.cfx.re/t/release-wip-lua-classes-for-everyone/1663296">FiveM post</a><a class="headerlink" href="#fivem-post" title="Permanent link">&para;</a></h3>
-<h2 id="patch-notes">Patch Notes<a class="headerlink" href="#patch-notes" title="Permanent link">&para;</a></h2>
-<h3 id="v010-big-changes">v0.1.0 BIG CHANGES<a class="headerlink" href="#v010-big-changes" title="Permanent link">&para;</a></h3>
+                <h1 id="triggerclientcallback">TriggerClientCallback<a class="headerlink" href="#triggerclientcallback" title="Permanent link">&para;</a></h1>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Find a new method of creating classes, old method had bugs about being replaced it-self.</li>
+<li>source <code>number</code></li>
+<li>eventName <code>string</code></li>
+<li>*values <code>any</code></li>
+</ul>
+<h3 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h3>
+<ul>
+<li>values from client-side <code>any</code></li>
+</ul>
+<h3 id="raise">Raise<a class="headerlink" href="#raise" title="Permanent link">&para;</a></h3>
+<ul>
+<li>None</li>
 </ul>
 <hr />
-<h3 id="v011">v0.1.1<a class="headerlink" href="#v011" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Added StateBag class</li>
-<li>Fix [client/ped.lua] missing returning the Vehicle class</li>
-</ul>
-<hr />
-<h3 id="v012">v0.1.2<a class="headerlink" href="#v012" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Added new class Prop</li>
-<li>Added inside class methods .state</li>
-<li>It's used like class StateBag (ex: .state:set(key, value, shared))</li>
-</ul>
-<hr />
-<h3 id="v013">v0.1.3<a class="headerlink" href="#v013" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Added method AddBlip to Coords class</li>
-<li>Added methods GetPosition and SwapModel to class Prop</li>
-<li>Added function TimeoutRequestModel to utils</li>
-<li>Added common methods (string and table)</li>
-<li>Removed error when trying to create a Ped class with non existent entity (now is only a warning)</li>
-<li>Updated state for Player class</li>
-<li>Updated StateBag for players</li>
-</ul>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">some</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">returned</span> <span class="o">=</span> <span class="n">TriggerClientCallback</span><span class="p">(</span><span class="s1">&#39;awesome:script&#39;</span><span class="p">,</span> <span class="n">some</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="c1">-- this is synchronous!</span>
+</code></pre></div>
                 
               
               
@@ -853,14 +793,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../../client/timeoutrequestmodel/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                TimeoutRequestModel
+              </div>
+            </div>
+          </a>
         
-          <a href="utils/common/split/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../registerservercallback/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                string:split
+                RegisterServerCallback
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -887,15 +841,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../../..",
           features: ['navigation.instant', 'header.autohide'],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
