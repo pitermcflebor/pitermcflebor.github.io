@@ -2,6 +2,7 @@ site_name: Lua Classes for FiveM
 nav:
   - 'Index': 'index.md'
   - 'Classes':
+    - 'How to start': 'tutorial.md'
     - 'Utils':
       - 'Common':
         - 'string:split': 'utils/common/split.md'
@@ -52,3 +53,5 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+
+site_dir: '../docs'
