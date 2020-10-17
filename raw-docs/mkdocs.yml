@@ -23,14 +23,15 @@ nav:
       - 'Server':
         - 'TriggerClientCallback': 'utils/server/triggerclientcallback.md'
         - 'RegisterServerCallback': 'utils/server/registerservercallback.md'
-    - 'Client':
-      - 'Coords':
-        - 'Init': 'coords/client/init.md'
+    - 'Coords':
+      - 'Common':
+        - 'Init': 'coords/common/init.md'
+        - 'UpdateX': 'coords/common/updatex.md'
+        - 'UpdateY': 'coords/common/updatey.md'
+        - 'UpdateZ': 'coords/common/updatez.md'
+        - 'UpdateW': 'coords/common/updatew.md'
+      - 'Client':
         - 'AddBlip': 'coords/client/addblip.md'
-        - 'UpdateX': 'coords/client/updatex.md'
-        - 'UpdateY': 'coords/client/updatey.md'
-        - 'UpdateZ': 'coords/client/updatez.md'
-        - 'UpdateW': 'coords/client/updatew.md'
   - 'Credits': 'credits.md'
 
 theme:
