@@ -10,7 +10,7 @@
 
 ### Raise
 
-- `warning` After 500ms, request timed out. This breaks the loop waiting for the model.
+- `warning` After 20 seconds, request timed out. This breaks the loop waiting for the model.
 
 ---
 

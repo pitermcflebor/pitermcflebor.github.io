@@ -3,6 +3,7 @@ nav:
   - 'Index': 'index.md'
   - 'Classes':
     - 'How to start': 'tutorial.md'
+    - 'Hot to read the docs': 'read.md'
     - 'Utils':
       - 'Common':
         - 'string:split': 'utils/common/split.md'
@@ -20,6 +21,7 @@ nav:
         - 'ShowHelpNotification': 'utils/client/showhelpnotification.md'
         - 'ShowNotification': 'utils/client/shownotification.md'
         - 'TimeoutRequestModel': 'utils/client/timeoutrequestmodel.md'
+        - 'TimeoutRequestAnim': 'utils/client/timeoutrequestanim.md'
       - 'Server':
         - 'TriggerClientCallback': 'utils/server/triggerclientcallback.md'
         - 'RegisterServerCallback': 'utils/server/registerservercallback.md'
@@ -32,6 +34,22 @@ nav:
         - 'UpdateW': 'coords/common/updatew.md'
       - 'Client':
         - 'AddBlip': 'coords/client/addblip.md'
+    - 'StateBag':
+      - 'Common':
+        - 'Init': 'statebag/common/init.md'
+        - 'set': 'statebag/common/set.md'
+        - 'get': 'statebag/common/get.md'
+        - 'clear': 'statebag/common/clear.md'
+        - 'clearAll': 'statebag/common/clearall.md'
+    - 'Player':
+      - 'Common':
+        - 'Init': 'player/common/init.md'
+    - 'Ped':
+      - 'Common':
+        - 'Init': 'ped/common/init.md'
+    - 'Vehicle':
+      - 'Common':
+        - 'Init': 'vehicle/common/init.md'
   - 'Credits': 'credits.md'
 
 theme:
@@ -45,7 +63,9 @@ theme:
 
 markdown_extensions:
   - pymdownx.highlight
+  - pymdownx.details
   - pymdownx.superfences
+  - admonition
   - toc:
       permalink: true
 
