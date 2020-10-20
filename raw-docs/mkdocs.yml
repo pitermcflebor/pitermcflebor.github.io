@@ -3,7 +3,7 @@ nav:
   - 'Index': 'index.md'
   - 'Classes':
     - 'How to start': 'tutorial.md'
-    - 'Hot to read the docs': 'read.md'
+    - 'How to read the docs': 'read.md'
     - 'Utils':
       - 'Common':
         - 'string:split': 'utils/common/split.md'
