@@ -1122,25 +1122,29 @@
 <span class="n">games</span> <span class="p">{</span> <span class="s1">&#39;gta5&#39;</span> <span class="p">}</span>
 
 <span class="n">client_scripts</span> <span class="p">{</span>
-    <span class="s1">&#39;@classes/common/utils.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/utils.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/statebag.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/coords.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/vehicle.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/player.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/ped.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/client/marker.lua&#39;</span><span class="p">,</span>
+    <span class="c1">-- DEPRECATED AFTER 0.2.0</span>
+    <span class="cm">--[[ &#39;@classes/common/utils.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/utils.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/statebag.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/coords.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/vehicle.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/player.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/ped.lua&#39;,</span>
+<span class="cm">    &#39;@classes/client/marker.lua&#39;, ]]</span>
+    <span class="s1">&#39;@classes/import.lua&#39;</span><span class="p">,</span>
     <span class="s1">&#39;client/main.lua&#39;</span>
 <span class="p">}</span>
 
 <span class="n">server_scripts</span> <span class="p">{</span>
-    <span class="s1">&#39;@classes/common/utils.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/server/utils.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/server/statebag.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/server/coords.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/server/vehicle.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/server/player.lua&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;@classes/server/ped.lua&#39;</span><span class="p">,</span>
+    <span class="c1">-- DEPRECATED AFTER 0.2.0</span>
+    <span class="cm">--[[ &#39;@classes/common/utils.lua&#39;,</span>
+<span class="cm">    &#39;@classes/server/utils.lua&#39;,</span>
+<span class="cm">    &#39;@classes/server/statebag.lua&#39;,</span>
+<span class="cm">    &#39;@classes/server/coords.lua&#39;,</span>
+<span class="cm">    &#39;@classes/server/vehicle.lua&#39;,</span>
+<span class="cm">    &#39;@classes/server/player.lua&#39;,</span>
+<span class="cm">    &#39;@classes/server/ped.lua&#39;, ]]</span>
+    <span class="s1">&#39;@classes/import.lua&#39;</span><span class="p">,</span>
     <span class="s1">&#39;server/main.lua&#39;</span>
 <span class="p">}</span>
 
@@ -1153,14 +1157,23 @@
 <span class="cm">}</span>
 <span class="cm">]]</span>
 </code></pre></div></p>
+<p><em>Inside your client-server side .lua file</em>
+<div class="highlight"><pre><span></span><code><span class="n">import</span> <span class="s1">&#39;*&#39;</span>                  <span class="c1">-- this get all classes</span>
+<span class="n">import</span> <span class="s1">&#39;ped&#39;</span>                <span class="c1">-- this get ped class</span>
+<span class="n">import</span> <span class="p">{</span><span class="s1">&#39;ped&#39;</span><span class="p">,</span> <span class="s1">&#39;player&#39;</span><span class="p">}</span>    <span class="c1">-- this get ped and player classes</span>
+
+<span class="c1">-- now you can use the imported classes as before 0.2.0!</span>
+<span class="kd">local</span> <span class="n">ped</span> <span class="o">=</span> <span class="n">Ped</span><span class="p">(</span><span class="cm">--[[ params ]]</span><span class="p">)</span>
+</code></pre></div></p>
 <h2 id="adding-this-to-snippets-for-vscode">Adding this to snippets for VSCode<a class="headerlink" href="#adding-this-to-snippets-for-vscode" title="Permanent link">&para;</a></h2>
 <p>Adding a snippet on VSCode to write our <code>fxmanifest.lua</code> file will be very useful.</p>
 <ul>
 <li>Go to <code>File &gt; Preferences &gt; User Snippets</code></li>
 <li>Create a <code>New Global Snippets file...</code></li>
 <li>Remove all from the snippet file</li>
-<li>Copy and paste this inside the snippet file:
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<li>Copy and paste this inside the snippet file:</li>
+</ul>
+<details class="note"><summary>Snippet</summary><div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;fxmanifest&quot;</span><span class="p">:{</span>
         <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;lua&quot;</span><span class="p">,</span>
         <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;fxmanifest&quot;</span><span class="p">,</span>
@@ -1169,25 +1182,12 @@
             <span class="s2">&quot;games { &#39;gta5&#39; }&quot;</span><span class="p">,</span>
             <span class="s2">&quot;&quot;</span><span class="p">,</span>
             <span class="s2">&quot;client_scripts {&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/common/utils.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/utils.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/statebag.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/coords.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/vehicle.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/player.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/ped.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/client/marker.lua&#39;,&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;\t&#39;@classes/import.lua&#39;,&quot;</span><span class="p">,</span>
             <span class="s2">&quot;\t&#39;client/*.lua&#39;,&quot;</span><span class="p">,</span>
             <span class="s2">&quot;}&quot;</span><span class="p">,</span>
             <span class="s2">&quot;&quot;</span><span class="p">,</span>
             <span class="s2">&quot;server_scripts {&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/common/utils.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/server/utils.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/server/statebag.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/server/coords.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/server/vehicle.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/server/player.lua&#39;,&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;\t&#39;@classes/server/ped.lua&#39;,&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;\t&#39;@classes/import.lua&#39;,&quot;</span><span class="p">,</span>
             <span class="s2">&quot;\t&#39;server/*.lua&#39;,&quot;</span><span class="p">,</span>
             <span class="s2">&quot;}&quot;</span><span class="p">,</span>
             <span class="s2">&quot;&quot;</span><span class="p">,</span>
@@ -1195,8 +1195,8 @@
         <span class="p">]</span>
     <span class="p">},</span>
 <span class="p">}</span>
-</code></pre></div></li>
-</ul>
+</code></pre></div>
+</details>
 <p>Once this is done, we just need to write <code>fxmanifest</code> and press enter.</p>
                 
               

@@ -1105,31 +1105,22 @@
 <h3 id="github-code"><a href="https://github.com/pitermcflebor/fivem-classes-lua">Github Code</a><a class="headerlink" href="#github-code" title="Permanent link">&para;</a></h3>
 <h3 id="fivem-post"><a href="https://forum.cfx.re/t/release-wip-lua-classes-for-everyone/1663296">FiveM post</a><a class="headerlink" href="#fivem-post" title="Permanent link">&para;</a></h3>
 <h2 id="release-notes">Release notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h2>
-<details class="summary"><summary>v0.1.0 BIG CHANGES</summary><ul>
-<li>Find a new method of creating classes, old method had bugs about being replaced it-self.</li>
-</ul>
-</details>
-<details class="summary"><summary>v0.1.1</summary><ul>
-<li>Added StateBag class</li>
-<li>Fix [client/ped.lua] missing returning the Vehicle class</li>
-</ul>
-</details>
-<details class="summary"><summary>v0.1.2</summary><ul>
-<li>Added new class Prop</li>
-<li>Added inside class methods .state<ul>
-<li>It's used like class StateBag (ex: .state:set(key, value, shared))</li>
+<div class="admonition summary">
+<p class="admonition-title">v0.2.0 BIG CHANGES?</p>
+<ul>
+<li>Added new method to import classes<ul>
+<li>Don't need anymore to import as <code>@classes/...</code> on fxmanifest.lua file</li>
 </ul>
 </li>
 </ul>
-</details>
-<details class="summary"><summary>v0.1.3</summary><ul>
-<li>Added method AddBlip to Coords class</li>
-<li>Added methods GetPosition and SwapModel to class Prop</li>
-<li>Added function TimeoutRequestModel to utils</li>
-<li>Added common methods (string and table)</li>
-<li>Removed error when trying to create a Ped class with non existent entity (now is only a warning)</li>
-<li>Updated state for Player class</li>
-<li>Updated StateBag for players</li>
+<div class="admonition warning">
+<p class="admonition-title">IMPORTANT</p>
+<p>Check the <a href="/tutorial">tutorial</a> !</p>
+</div>
+</div>
+<details class="summary"><summary>v0.1.6</summary><ul>
+<li>Added version check</li>
+<li>Added new method to Ped client-side</li>
 </ul>
 </details>
 <details class="summary"><summary>v0.1.4</summary><ul>
@@ -1142,6 +1133,33 @@
 <li>Fixed Marker class, marker appears on center now</li>
 <li>Fixed Coords:AddBlip</li>
 <li>Removed unused prints</li>
+</ul>
+</details>
+<details class="summary"><summary>v0.1.3</summary><ul>
+<li>Added method AddBlip to Coords class</li>
+<li>Added methods GetPosition and SwapModel to class Prop</li>
+<li>Added function TimeoutRequestModel to utils</li>
+<li>Added common methods (string and table)</li>
+<li>Removed error when trying to create a Ped class with non existent entity (now is only a warning)</li>
+<li>Updated state for Player class</li>
+<li>Updated StateBag for players</li>
+</ul>
+</details>
+<details class="summary"><summary>v0.1.2</summary><ul>
+<li>Added new class Prop</li>
+<li>Added inside class methods .state<ul>
+<li>It's used like class StateBag (ex: .state:set(key, value, shared))</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="summary"><summary>v0.1.1</summary><ul>
+<li>Added StateBag class</li>
+<li>Fix [client/ped.lua] missing returning the Vehicle class</li>
+</ul>
+</details>
+<details class="summary"><summary>v0.1.0 BIG CHANGES</summary><ul>
+<li>Find a new method of creating classes, old method had bugs about being replaced it-self.</li>
 </ul>
 </details>
                 
